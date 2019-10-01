@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/colorGrey30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí bằng email"
+            android:textAlignment="center"
+            android:textSize="14pt" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="10pt"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorBlue"
+            android:textColor="@color/colorBlue"
+            android:layout_margin="20dp"
+            android:id="@+id/txtEmail_Regis"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:textSize="11pt"
+                android:textColor="@color/colorGrey50"
+                android:layout_margin="20dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorGrey50"
+                android:id="@+id/txtPassword_Regis" />
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="18dp"
+                android:src="@drawable/ic_visibility_off_black_24dp"
+                android:id="@+id/btnVisiOff_Regis"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="18dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_visibility_black_24dp"
+                android:id="@+id/btnVisiOn_Regis"/>
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Đăng ký"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btnRegister_Regis"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey30"
+            android:textColor="@color/colorGreen"
+            android:text="Đăng nhập"
+            android:id="@+id/btnLogin_Regis"
+            android:textSize="10pt"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
